@@ -17,17 +17,18 @@ class Line {
     }
 
 
-    void setX(double const x) {
-        a->x = x;
+    void setA(Point const aa) {
+        a = new Point(aa);
     }
-    void setY(double y) {
-        a->y = y;
+    void setB(Point const bb) {
+        b = new Point(bb);
     }
-    double getX() {
-        return a->x;
+    Point getA() {
+        return *a;
+
     }
-    double getY() {
-        return a->y;
+    Point getY() {
+        return *b;
     }
 
 

@@ -5,11 +5,22 @@ using namespace std;
 
 
 int main() {
-    auto l = new Point(3, 4);
-    auto r = new Point(5, 6);
-    auto line = new Line(l, r);
 
-    cout << line->mod();
+    Point* p1 = new Point(1, 3);
+    Point* p2 = new Point(2, 3);
+    Point* p3 = new Point(3, 3);
+    Point* p4 = new Point(4, 3);
+
+    Line* l1 = new Line(p1, p2);
+    Line* l2 = new Line(p3, p4);
+
+    cout << l1->mod() << endl;
+    cout << l2->mod() << endl;
+
+    delete l1;
+
+
+    return 0;
 
 
 }
